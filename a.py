@@ -7,7 +7,8 @@ def signum(a):
     return 1 - 2*(kol % 2)
 
 def change_row(matr, k, j):
-    
+
+
 
 def monom(a):
     monom = 1
@@ -45,3 +46,7 @@ a = [ 1, 2, 3 ]
 a = [i for i in range(1,n+1)]
 heapPermutation(a, n)
 print(det)
+aa = 8
+bb = 7
+aa = aa-aa + bb
+bb = bb-bb + aa
