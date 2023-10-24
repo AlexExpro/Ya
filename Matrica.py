@@ -13,13 +13,9 @@ def change_row(x, y, matr):
         matr[x][i] = matr[y][i]
         matr[y][i] = temp
 
-def umnoshenie(x, y, matr):
-    for i in range(n):
-    #     for i in range(len(a)):
-    # for j in range(len(a)):       
-    #     c[i][j] = (a[i][j] * b[i][j])
-    # print(c, end=' ')
-    # print()
+def umnoshenie(i, y, matr):
+        for j in range(len(a[0])):       
+            matr[i][j] = matr(a[i][j] * y[i][j])
 
 def monom(a):
     monom = 1
@@ -31,9 +27,6 @@ def monom(a):
 def heapPermutation(a, size):
     if (size == 1):
         global det
-        #print(a)
-        #print(signum(a))
-        #print(monom(a))
         det = det + signum(a) * monom(a)
         return
 
