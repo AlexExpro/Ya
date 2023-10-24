@@ -6,8 +6,20 @@ def signum(a):
                 kol += 1
     return 1 - 2*(kol % 2)
 
-def change_row(matr, k, j):
-    
+def change_row(x, y, matr):
+    for i in range(n):
+        # поменять matr[x][i] и matr[y][i]
+        temp = matr[x][i]
+        matr[x][i] = matr[y][i]
+        matr[y][i] = temp
+
+def umnoshenie(x, y, matr):
+    for i in range(n):
+    #     for i in range(len(a)):
+    # for j in range(len(a)):       
+    #     c[i][j] = (a[i][j] * b[i][j])
+    # print(c, end=' ')
+    # print()
 
 def monom(a):
     monom = 1
@@ -22,8 +34,9 @@ def heapPermutation(a, size):
         #print(a)
         #print(signum(a))
         #print(monom(a))
-        det = det + signum(a)*monom(a)
+        det = det + signum(a) * monom(a)
         return
+
 
     for i in range(size):
         heapPermutation(a, size - 1)

@@ -6,10 +6,6 @@ def signum(a):
                 kol += 1
     return 1 - 2*(kol % 2)
 
-def change_row(matr, k, j):
-
-
-
 def monom(a):
     monom = 1
     global matr
